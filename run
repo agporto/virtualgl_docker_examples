@@ -4,7 +4,7 @@ set -u
 set -e
 
 if [ -z ${VGL_DISPLAY+x} ]; then
-	export VGL_DISPLAY=/dev/dri/card0
+	export VGL_DISPLAY=/dev/dri/card1
 	if [ ! -c /dev/dri/card0 ]; then
 		echo ERROR: /dev/dri/card0 does not exist.
 		exit 1
